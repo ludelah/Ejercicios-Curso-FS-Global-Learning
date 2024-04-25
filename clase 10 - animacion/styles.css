@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #00151F;
+}
+
+*:has(p){
+    color: #f8ffff;
+}
+
+.container{
+    width: 119px;
+    height: 119px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.container div{
+    animation-duration: 100ms;
+    display: inline;
+    color: #f8ffff;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container img{
+    /*animation-name: loaded-image;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-iteration-count: 1; */
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container div{
+    animation-name: loading-animation /*, loaded*/;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1.000, -0.030, 1.000, -0.135);
+    animation-iteration-count: 10 /*1*/;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+.L{
+    animation-delay: 0s ;
+}
+.O{
+    animation-delay: 100ms ;
+}
+.A{
+    animation-delay: 200ms ;
+}
+.D{
+    animation-delay: 300ms ;
+}
+.I{
+    animation-delay: 400ms ;
+}
+.N{
+    animation-delay: 500ms ;
+}
+
+.G{
+    animation-delay: 600ms ;
+}
+
+@keyframes loading-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 10;
+    }
+    70% {
+        opacity: 15;
+    }
+    85% {
+        opacity: 50;
+        font-weight: bolder;
+        color: #900000;
+    }
+    100% {
+        opacity: 100;
+        font-weight: normal;
+    }
+}
+
+@keyframes loaded{
+    0% {
+        opacity: 100;
+    }
+
+    90% {
+        opacity: 95;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 
+@keyframes loaded-image {
+    0%{
+        transform: scale(0);
+        opacity: 100;
+    }
+    100% { transform: scale(4000%); }
+
+} */
