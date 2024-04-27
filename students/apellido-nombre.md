@@ -1,3 +1,0 @@
-### Luciano Delahaye
-
-> :o
