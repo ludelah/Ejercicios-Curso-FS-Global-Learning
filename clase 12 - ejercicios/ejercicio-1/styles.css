@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5dc;
+}
+
+.form-container {
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5dc;
+}
+
+form {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 30px);
+    justify-items: right;
+    align-items: center;
+}
+
+label {
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -2px;
+}
+
+input {
+    margin-left: 10px;
+    justify-self: left;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+#newsletter-checkbox {
+    margin-left: 10px;
+    justify-self: left;
+}
