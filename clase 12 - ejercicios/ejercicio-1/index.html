@@ -10,19 +10,24 @@
     <div class="form-container">
         <form>
             <label for="first-name">First name: </label>
-            <input name="first-name" id="first-name" type="text" />
+            <input name="first-name" id="first-name" class="name" type="text" />
+            <span id="firstname-warning" class="hidden warning">Nombre inválido</span>
+
 
             <label for="last-name">Last name: </label>
-            <input name="last-name" id="last-name" type="text" />
+            <input name="last-name" id="last-name" class="name" type="text" />
+            <span id="lastname-warning" class="hidden warning">Apellido inválido</span>
+
 
             <label for="username">Username: </label>
-            <input name="username" id="username" type="text" />
+            <input name="username" id="username" class="name" type="text" />
 
             <label for="password">Password: </label>
-            <input name="password" id="password" type="password" />
+            <input name="password" id="password" class="password" type="password" />
 
             <label for="confirm-pw">Confirm password: </label>
-            <input name="confirm-pw" id="confirm-pw" type="password" />
+            <input name="confirm-pw" id="confirm-pw" class="password" type="password" />
+            <span id="password-warning" class="hidden warning">Contraseñas inválidas o no coincidentes</span>
 
             <label for="birthday">Birthday: </label>
             <input name="birthday" id="birthday" type="date" />
@@ -36,8 +41,10 @@
 
             <label for="submit-button"></label>
         </form>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
+        <!--  <button id="showdata">show data</button>  -->
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
